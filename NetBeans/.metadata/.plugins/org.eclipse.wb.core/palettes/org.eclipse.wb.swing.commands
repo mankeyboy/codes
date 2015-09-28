@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<commands>
+	<addCategory
+		id="category_1428415962766"
+		name="Custom"
+		description="Container for custom components"
+		visible="true"
+		open="true"/>
+	<addComponent
+		id="custom_1428415962766"
+		name="Image"
+		description="Creates java.awt.Image component."
+		visible="true"
+		class="java.awt.Image"
+		category="category_1428415962766"/>
+	<addComponent
+		id="custom_1428416244311"
+		name="ImagePainter"
+		description="Creates javax.swing.plaf.synth.ImagePainter component."
+		visible="true"
+		class="javax.swing.plaf.synth.ImagePainter"
+		category="category_1428415962766"/>
+</commands>

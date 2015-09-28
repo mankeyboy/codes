@@ -1,0 +1,24 @@
+CommandLine-Map
+
+s
+CommandLine-Ngdbuild
+C:\Xilinx\10.1\ISE\bin\nt\unwrapped\ngdbuild.exe -ise C:/Users/student/Desktop/COA_Assignments/Assignment 5/ass_5_grp_55/ass_5_grp_55.ise -intstyle ise -dd _ngo -nt timestamp -i -p xc3s400-pq208-4 black_box.ngc black_box.ngd
+s
+CommandLine-Par
+
+s
+CommandLine-Xst
+
+s
+Previous-NGD
+black_box_prev_built.ngd
+s
+Previous-NGM
+
+s
+Previous-Packed-NCD
+
+s
+Previous-Routed-NCD
+
+s

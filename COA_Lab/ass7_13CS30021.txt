@@ -1,0 +1,39 @@
+//Mayank Roy 13CS30021 Group 55 //
+//////////////////////////////////
+The assignment given to us was to build a 16-bit carry lookahead adder using 4-bit Carry Look Ahead Full Adders and a 4-bit Carry Look Ahead Unit.
+
+For this, we were hinted in the explanation for the design and according to that we first designed a 1-bit Full Adder and another 4-bit CLA Unit and used them to create a 4-bit CLA Adder. Then we used 4 of these 4-bit CLA Adders and another CLA Unit to get our 16-bit CLA adder. We created a test bench for each of this modules and then ran them on the simulator.
+//////////////////////////////////
+1 bit FULL ADDER :		//
+//////////////////////////////////
+Sum = A ^ B ^ Cin     
+Cout = AB + BCin + CinA
+
+P[i] = A[i] + B[i]
+G[i] = A[i]B[i] 
+
+C[i+1] = G[i] + P[i]C[i]
+
+//////////////////////////////////
+CLA Unit :			//
+//////////////////////////////////
+
+C1 = G[0] + P[0]C[0]
+C2 = G[1] + P[1]C[1] = G[1] + P[1]G[0] + P[1]P[0]C[0]
+C3 = G[2] + P[2]C[2] = G[2] + P[2]G[1] + P[2]P[1]G[0] + P[2]P[1]P[0]C[0]
+C4 = G[3] + P[3]C[3] = G[3] + P[3]G[2] + P[3]P[2]G[1] + P[3]P[2]P[1]G[0] + P[3]P[2]P[1]P[0]C[0]
+
+PG = P[0]P[1]P[2]P[3]
+GG = G[3] + P[3]G[2] + P[3]P[2]G[1] + P[3]P[2]P[1]G[0]  
+
+Sum[i] = P[i] ^ C[i]
+
+This has a gate delay of 4 units as compared to 16 units in case of ripple carry adder.
+
+//////////////////////////////////
+16-bit BCLA :			//	
+//////////////////////////////////
+
+We used 2nd level of abstraction for this, i.e, PG and GG from each successive four bits are given as input to CL to get C[4], C[8], C[12] and C[16] which are used by the CLAs to find the sum
+
+Total Gate Delay for our 16 bit CLA =  1 + 2 + 2 + 2 + 1 = 8 units

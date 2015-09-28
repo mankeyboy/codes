@@ -1,0 +1,12 @@
+net "outa" loc = "p120";
+net "outb" loc = "p124";
+net "outc" loc = "p123";
+net "outd" loc = "p126";
+net "oute" loc = "p125";
+net "outf" loc = "p130";
+net "outg" loc = "p128";
+net "switch" loc = "p117";
+net "x0" loc = "p191";
+net "x1" loc = "p190";
+net "x2" loc = "p196";
+net "x3" loc = "p194";

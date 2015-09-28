@@ -1,0 +1,26 @@
+module testbench_all();
+        reg    x0, x1, x2, x3;
+        wire   outa, outb, outc, outd, oute, outf, outg;
+		A	oa(outa, x0, x1, x2, x3);
+		B	ob(outb, x0, x1, x2, x3);
+		C	oc(outc, x0, x1, x2, x3);
+		D	od(outd, x0, x1, x2, x3);
+		E	oe(oute, x0, x1, x2, x3);
+		F	of(outf, x0, x1, x2, x3);
+		G	og(outg, x0, x1, x2, x3);
+        initial begin
+            $monitor ($time," x0=%b x1=%b x2=%b x3=%b    a=%b b=%b c=%b d=%b e=%b f=%b g=%b", x0, x1, x2, x3, outa, outb, outc, outd, oute, outf, outg);
+            x0 = 0; x1 = 0; x2 = 1; x3 = 1;
+            #100 x0 = 0; x1 = 1; x2 = 0; x3 = 0;
+            #100 x0 = 0; x1 = 1; x2 = 0; x3 = 1;
+            #100 x0 = 0; x1 = 1; x2 = 1; x3 = 0;
+            #100 x0 = 0; x1 = 1; x2 = 1; x3 = 1;
+            #100 x0 = 1; x1 = 0; x2 = 0; x3 = 0;
+            #100 x0 = 1; x1 = 0; x2 = 0; x3 = 1;
+            #100 x0 = 1; x1 = 0; x2 = 1; x3 = 0;
+            #100 x0 = 1; x1 = 0; x2 = 1; x3 = 1;
+            #100 x0 = 1; x1 = 1; x2 = 0; x3 = 0;
+        end
+
+    endmodule
+	 

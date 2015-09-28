@@ -1,0 +1,78 @@
+--------------------------------------------------------------------------------
+Release 10.1.03 Trace  (nt)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\10.1\ISE\bin\nt\unwrapped\trce.exe -ise
+C:/Users/student/Desktop/COA_Assignments/Assignment 5/ass_5_grp_55/ass_5_grp_55.ise
+-intstyle ise -v 3 -s 4 -xml black_box black_box.ncd -o black_box.twr
+black_box.pcf -ucf ucf.ucf
+
+Design file:              black_box.ncd
+Physical constraint file: black_box.pcf
+Device,package,speed:     xc3s400,pq208,-4 (PRODUCTION 1.39 2008-01-09)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+x0             |outa           |   12.071|
+x0             |outb           |   12.318|
+x0             |outc           |   12.545|
+x0             |outd           |   11.509|
+x0             |oute           |   11.938|
+x0             |outf           |   11.492|
+x0             |outg           |   11.669|
+x1             |outa           |   11.694|
+x1             |outb           |   11.941|
+x1             |outd           |   11.387|
+x1             |oute           |   11.482|
+x1             |outf           |   11.036|
+x1             |outg           |   11.562|
+x2             |outa           |   12.174|
+x2             |outb           |   12.421|
+x2             |outc           |   12.672|
+x2             |outd           |   11.998|
+x2             |oute           |   12.083|
+x2             |outf           |   11.637|
+x2             |outg           |   12.249|
+x3             |outa           |   12.959|
+x3             |outc           |   12.775|
+x3             |outd           |   12.084|
+x3             |oute           |   12.601|
+x3             |outf           |   12.500|
+x3             |outg           |   12.329|
+---------------+---------------+---------+
+
+
+Analysis completed Fri Aug 14 14:44:33 2015 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 113 MB
+
+
+
