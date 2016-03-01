@@ -1,0 +1,85 @@
+Running : C:\Xilinx\10.1\ISE\bin\nt\unwrapped\fuse.exe -ise
+C:/Users/student/Desktop/COA_Assignments/Assignment
+5/ass_5_grp_55/ass_5_grp_55.ise -intstyle ise -incremental -lib unisims_ver -lib
+unimacro_ver -lib xilinxcorelib_ver -o testbench_all_isim_beh.exe -prj
+testbench_all_beh.prj -top testbench_all -top glbl
+Determining compilation order of HDL files
+Analyzing Verilog file module1.v
+Analyzing Verilog file testbench_m1.v
+Analyzing Verilog file C:/Xilinx/10.1/ISE/verilog/src/glbl.v
+Saving Verilog parse-tree work.notGate into
+c:/users/student/desktop/coa_assignments/assignment
+5/ass_5_grp_55/isim/work/not@gate.sdb
+Saving Verilog parse-tree work.and2Gate into
+c:/users/student/desktop/coa_assignments/assignment
+5/ass_5_grp_55/isim/work/and2@gate.sdb
+Saving Verilog parse-tree work.or2Gate into
+c:/users/student/desktop/coa_assignments/assignment
+5/ass_5_grp_55/isim/work/or2@gate.sdb
+Saving Verilog parse-tree work.nor2Gate into
+c:/users/student/desktop/coa_assignments/assignment
+5/ass_5_grp_55/isim/work/nor2@gate.sdb
+Saving Verilog parse-tree work.and3Gate into
+c:/users/student/desktop/coa_assignments/assignment
+5/ass_5_grp_55/isim/work/and3@gate.sdb
+Saving Verilog parse-tree work.or3Gate into
+c:/users/student/desktop/coa_assignments/assignment
+5/ass_5_grp_55/isim/work/or3@gate.sdb
+Saving Verilog parse-tree work.nor3Gate into
+c:/users/student/desktop/coa_assignments/assignment
+5/ass_5_grp_55/isim/work/nor3@gate.sdb
+Saving Verilog parse-tree work.A into
+c:/users/student/desktop/coa_assignments/assignment
+5/ass_5_grp_55/isim/work/@a.sdb
+Saving Verilog parse-tree work.B into
+c:/users/student/desktop/coa_assignments/assignment
+5/ass_5_grp_55/isim/work/@b.sdb
+Saving Verilog parse-tree work.C into
+c:/users/student/desktop/coa_assignments/assignment
+5/ass_5_grp_55/isim/work/@c.sdb
+Saving Verilog parse-tree work.D into
+c:/users/student/desktop/coa_assignments/assignment
+5/ass_5_grp_55/isim/work/@d.sdb
+Saving Verilog parse-tree work.E into
+c:/users/student/desktop/coa_assignments/assignment
+5/ass_5_grp_55/isim/work/@e.sdb
+Saving Verilog parse-tree work.F into
+c:/users/student/desktop/coa_assignments/assignment
+5/ass_5_grp_55/isim/work/@f.sdb
+Saving Verilog parse-tree work.G into
+c:/users/student/desktop/coa_assignments/assignment
+5/ass_5_grp_55/isim/work/@g.sdb
+Saving Verilog parse-tree work.black_box into
+c:/users/student/desktop/coa_assignments/assignment
+5/ass_5_grp_55/isim/work/black_box.sdb
+Saving Verilog parse-tree work.testbench_all into
+c:/users/student/desktop/coa_assignments/assignment
+5/ass_5_grp_55/isim/work/testbench_all.sdb
+Saving Verilog parse-tree work.glbl into
+c:/users/student/desktop/coa_assignments/assignment
+5/ass_5_grp_55/isim/work/glbl.sdb
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 128852 Kb
+Fuse CPU Usage: 124 ms
+Compiling module glbl
+Compiling module or2Gate
+Compiling module or3Gate
+Compiling module notGate
+Compiling module nor3Gate
+Compiling module and2Gate
+Compiling module and3Gate
+Compiling module A
+Compiling module nor2Gate
+Compiling module B
+Compiling module C
+Compiling module D
+Compiling module E
+Compiling module F
+Compiling module G
+Compiling module black_box
+Compiling module testbench_all
+Compiled 17 Verilog Units
+Built simulation executable testbench_all_isim_beh.exe
+Fuse Memory Usage: 130244 Kb
+Fuse CPU Usage: 265 ms

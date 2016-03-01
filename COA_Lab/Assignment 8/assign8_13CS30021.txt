@@ -1,0 +1,47 @@
+//Assignment 8 Explanation text
+//Group 55
+//Mayank Roy
+//13CS30021
+
+
+Implementation of 16 bit Radix-4 Booth's Multiplier using Verilog logical modules.
+
+Booth's Multiplication Algorithm:
+
+(Signed 2's Complement for first number)  X (Signed 2's Complement for second number)
+
+
+
+xi+1    ||    xi   ||   xi-1 ||   Indication                                              Action
+=================================================
+0         ||    0    ||  0     ||  run of zeroes                                           --       ||
+0         ||    1    ||  0     ||  isolated one at xsub(i)                              +M     ||
+1         ||    0    ||  0     ||  start of a run of ones at xsub(i+1)             −2M   ||
+1         ||    1    ||  0     ||  start of a run of ones at xsub(i)                 −M     ||
+0         ||    0    ||  1     ||  end of a run of ones at xsub(i-1)               +M     ||
+0         ||    1    ||  1     ||  end of a run of ones at xsub(i)                  +2M   ||
+1         ||    0    ||  1     ||  isolated 0 at xsub(i)                                 −M     ||
+1         ||    1    ||  1     ||  run of ones                                              --       ||
+=================================================
+
+
+
+Booth's algorithm examines adjacent pairs of bits of the n-bit multiplier Y in signed 2's complement bitwise representation, including one implied implicit bit below the LSB, ysub(-1) = 0. 
+
+For each bit ysub(i), 
+    for i running from 0 to N-1, 
+        the bits ysub(i) and ysub(i-1) are considered. 
+            Where these two bits are equal, the product P(accumulator) is left unchanged. 
+            Where ysub(i) = 0 and ysub(i-1) = 1, the multiplicand times 2^i is added to P; 
+            Where ysub(i) = 1 and ysub(i-1) = 0, the multiplicand times 2^i is subtracted from P. 
+
+The final value of P is the signed product.
+
+It is possible to reduce the number of partial products by half , by using the technique for radix 4 Booth recoding. 
+The basic idea is that , instead of shifti and add for every column of the multiplier term and multiplication by 1 or 0, we only take every second column and multiply by (+,-)1, (+,-)2 or 0 , to obtain the same results. 
+Radix-4 Booth Encoder performs the process of encoding the multiplicand based on multiplier bits. It will compare 3 bits at a time by maintaining an overlapping technique.
+
+The functional operation of Radix-4 Booth encoder consists of eight different types of states and during these states we can obtain the outcomes, 
+which are :          Multiplication of multiplicand with 0,-1 and -2 consecutively.
+
+Compared to the radix 2 booth's algo, this performs less calculation and hence is relatively faster.

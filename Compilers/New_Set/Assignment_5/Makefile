@@ -1,0 +1,28 @@
+#Mayank Roy 13CS30021 Assignment 5
+lex.yy.c: ass5_13CS30021.l
+	flex ass5_13CS30021.l
+
+y.tab.c: ass5_13CS30021.y
+	yacc -dtv ass5_13CS30021.y
+
+ass5_13CS30021_translator.o: ass5_13CS30021_translator.cxx
+	g++ -g -c ass5_13CS30021_translator.cxx
+
+lex.yy.o: lex.yy.c
+	g++ -g -c lex.yy.c
+
+y.tab.o:    y.tab.c
+	g++ -g -c y.tab.c
+	#add -DYYDEBUG to debug
+clean:
+	rm lex.yy.c y.tab.h y.output y.tab.c lex.yy.o y.tab.o ass5_13CS30021_translator.o a.out
+
+a.out: y.tab.o lex.yy.o ass5_13CS30021_translator.o 
+	g++ -g ass5_13CS30021_translator.o lex.yy.o y.tab.o -lfl
+	# ./a.out < expressiontest.c 
+	# ./a.out < declarationtest.c 
+	# ./a.out < conditiontest.c 
+	# ./a.out < functiontest.c 
+	# ./a.out < looptest.c 
+	# Above are the individual commands to execute the 5 testing files
+	# Each testing file is designed to check different set of rules

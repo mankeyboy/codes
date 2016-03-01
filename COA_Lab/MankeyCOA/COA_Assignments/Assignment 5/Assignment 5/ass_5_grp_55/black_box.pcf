@@ -1,0 +1,19 @@
+//! **************************************************************************
+// Written by: Map K.39 on Fri Aug 14 14:44:28 2015
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "switch" LOCATE = SITE "P117" LEVEL 1;
+COMP "outa" LOCATE = SITE "P120" LEVEL 1;
+COMP "outb" LOCATE = SITE "P124" LEVEL 1;
+COMP "outc" LOCATE = SITE "P123" LEVEL 1;
+COMP "outd" LOCATE = SITE "P126" LEVEL 1;
+COMP "oute" LOCATE = SITE "P125" LEVEL 1;
+COMP "outf" LOCATE = SITE "P130" LEVEL 1;
+COMP "outg" LOCATE = SITE "P128" LEVEL 1;
+COMP "x0" LOCATE = SITE "P191" LEVEL 1;
+COMP "x1" LOCATE = SITE "P190" LEVEL 1;
+COMP "x2" LOCATE = SITE "P196" LEVEL 1;
+COMP "x3" LOCATE = SITE "P194" LEVEL 1;
+SCHEMATIC END;
+
